@@ -1,0 +1,8 @@
+opencv-python
+mediapipe==0.10.14
+tensorflow
+scikit-learn
+pandas
+numpy
+joblib
+matplotlib

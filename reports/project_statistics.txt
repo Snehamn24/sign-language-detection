@@ -1,0 +1,100 @@
+SIGN LINGO PROJECT STATISTICS
+====================================
+
+Project Name:
+Sign Lingo: Real-Time Sign Language Alphabet Recognition and Sentence Formation
+
+Dataset Used:
+ASL Alphabet Dataset from Kaggle
+
+Approach Used:
+MediaPipe Hands + Random Forest Classifier
+
+Dataset Statistics:
+Total classes: 30
+Total selected images: 14500
+Total landmark samples saved: 13002
+Total skipped images: 1498
+
+Feature Details:
+Each hand image is converted into 21 hand landmarks.
+Each landmark has x, y, and z coordinates.
+Total features per sample = 21 × 3 = 63
+
+Train-Test Split:
+Training samples: 10401
+Testing samples: 2601
+
+Model Details:
+Model used: Random Forest Classifier
+Model accuracy: 0.9911572472126106
+
+Samples Per Class:
+label
+A          454
+B          438
+C          489
+D          494
+E          458
+F          493
+G          475
+H          478
+I          469
+J          446
+K          498
+L          436
+M          282
+N          166
+O          487
+P          495
+Q          469
+R          481
+S          500
+T          462
+U          455
+V          452
+W          417
+X          450
+Y          492
+Z          495
+del        377
+nothing    500
+space      394
+Name: count, dtype: int64
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           A       1.00      0.99      0.99        91
+           B       0.99      1.00      0.99        88
+           C       0.99      1.00      0.99        98
+           D       1.00      1.00      1.00        99
+           E       1.00      1.00      1.00        92
+           F       1.00      1.00      1.00        99
+           G       1.00      0.98      0.99        95
+           H       0.99      0.99      0.99        96
+           I       1.00      0.97      0.98        94
+           J       0.97      0.99      0.98        89
+           K       0.99      1.00      1.00       100
+           L       1.00      1.00      1.00        87
+           M       0.92      1.00      0.96        56
+           N       1.00      0.91      0.95        33
+           O       1.00      0.99      0.99        97
+           P       0.99      0.98      0.98        99
+           Q       0.99      1.00      0.99        94
+           R       1.00      1.00      1.00        96
+           S       0.98      0.99      0.99       100
+           T       1.00      1.00      1.00        92
+           U       0.98      1.00      0.99        91
+           V       1.00      0.98      0.99        90
+           W       1.00      0.99      0.99        83
+           X       1.00      0.99      0.99        90
+           Y       1.00      0.99      0.99        99
+           Z       0.99      1.00      0.99        99
+         del       0.99      0.97      0.98        75
+     nothing       0.99      1.00      1.00       100
+       space       0.97      0.99      0.98        79
+
+    accuracy                           0.99      2601
+   macro avg       0.99      0.99      0.99      2601
+weighted avg       0.99      0.99      0.99      2601
